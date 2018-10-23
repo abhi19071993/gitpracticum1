@@ -37,4 +37,21 @@ Plot between the overall rating vs the number of products rated is,
  
  We create an SFrame from the dataframe with columns reviewerID,productID,reviewText and overall rating. This SFrame is given as an input to graphlab's funtion to create the product sentiment summary which tokenizes the keywords in the review, does TF-IDF transform and creates inverted index.
  
- ![Markdown Logo](https://github.com/abhi19071993/gitpracticum1/blob/master/sentiment_1.png)
+ ![Markdown Logo](https://github.com/abhi19071993/gitpracticum1/blob/master/sentiment_1.PNG)
+
+This creates a sentiment summary with all the keywords from the reviews. To check sentiments of few commonly used keywords in the reviews,
+
+ ![Markdown Logo](https://github.com/abhi19071993/gitpracticum1/blob/master/sentiment_2.PNG)
+
+Recommender model:
+---
+
+We create the recommender model using recommender.create() function from graphlab. The input is the SFrame, reviewerid/userid,productID and the overall rating.
+
+ ![Markdown Logo](https://github.com/abhi19071993/gitpracticum1/blob/master/recommender_1.PNG)
+ 
+ And this creates the recommender model that recommends the top 10 products that every user will like based on his/her previous rating.
+ 
+  ![Markdown Logo](https://github.com/abhi19071993/gitpracticum1/blob/master/result.PNG)
+
+
