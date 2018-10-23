@@ -17,7 +17,8 @@ About the data:
 ---
 Around 1 million rows of data. EDA resulted in understanding 60813 unique reviewers and 4181 unique products.
 Null values and unique categories have been checked and action has been taken. Few plots to better understand the data,
-
+![Markdown Logo]
+()
 
  
  
